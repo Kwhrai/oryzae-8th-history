@@ -482,8 +482,8 @@
     letter-spacing: 0.1em;
   }
 
-  /* 縦並び（全幅で適用：sticky scroll を解除） */
-  @media (max-width: 99999px) {
+  /* モバイル */
+  @media (max-width: 600px) {
     .scrolly { display: block; max-width: 100%; }
     .sticky-pane {
       position: static;
@@ -539,7 +539,9 @@
     .mission-philosophy { padding: 32px 20px; }
     .final-question { padding: 40px 20px; }
   }
-  /* @media (min-width: 481px) は無効化（常に縦並び） */
+  @media (min-width: 601px) {
+    .mobile-photo { display: none; }
+  }
 
   .preview-note {
     position: fixed;
