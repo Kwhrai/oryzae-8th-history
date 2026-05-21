@@ -558,8 +558,7 @@
 </style>
 </head>
 <body>
-
-<div class="preview-note">PREVIEW — 完成版シナリオ</div>
+<script>if('scrollRestoration' in history)history.scrollRestoration='manual';window.scrollTo(0,0);</script>
 
 <!-- ============ ヒーロー ============ -->
 <section class="section-head">
@@ -986,6 +985,14 @@
 
   // 初回反映
   onScroll();
+
+  // iframe初期化時に必ずトップへ（ブラウザのscroll restoration対策）
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+  window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+    onScroll();
+  });
 </script>
 
 </body>
