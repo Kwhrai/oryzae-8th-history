@@ -303,6 +303,35 @@
     background: #fff;
   }
 
+  /* ====== 2026 マーカー（ミッションの直前） ====== */
+  .year-2026 {
+    text-align: center;
+    padding: 96px 24px 0;
+    background: var(--paper);
+  }
+  .year-2026-label {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(72px, 10vw, 120px);
+    font-weight: 800;
+    color: var(--koji-deep);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .year-2026-sub {
+    font-size: 13px;
+    letter-spacing: 0.4em;
+    color: var(--ink-soft);
+  }
+
+  /* ====== 社長メッセージ用ラベル ====== */
+  .ceo-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    color: var(--koji-deep);
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
   /* ====== ミッション大型コピー ====== */
   .mission {
     background: linear-gradient(180deg, var(--paper) 0%, #2a241e 60%, #1a1610 100%);
@@ -402,11 +431,11 @@
     opacity: 0.85;
   }
 
-  /* ====== 締めセクション（応援への橋） ====== */
+  /* ====== 締めセクション（社長メッセージ） ====== */
   .closing {
     text-align: center;
-    padding: 120px 24px 80px;
-    background: linear-gradient(180deg, #1a1610 0%, #3d342a 12%, var(--paper) 38%, var(--paper-deep) 100%);
+    padding: 80px 24px 96px;
+    background: var(--paper-deep);
   }
   .closing .year-now,
   .closing .label-now { position: relative; z-index: 1; }
@@ -830,6 +859,12 @@
   </div>
 </section>
 
+<!-- ============ 2026 マーカー ============ -->
+<section class="year-2026">
+  <div class="year-2026-label">2026</div>
+  <div class="year-2026-sub">8 T H　A N N I V E R S A R Y</div>
+</section>
+
 <!-- ============ ミッション宣言 ============ -->
 <section class="mission">
   <div class="mission-eyebrow">ORYZAE MISSION</div>
@@ -840,13 +875,12 @@
   </p>
   <p class="mission-body">
     「地球を発酵させる」── それは、人間だけがいい世界ではなく、地球に関わるすべてのステークホルダーが、ゆっくり良くなっていくこと。<br>
-    <strong>急に良くなるものは、急に廃れる。</strong><br>
     発酵のように、じわじわと持続可能な地盤を作っていく会社でありたい。
   </p>
 
   <div class="mission-philosophy">
     <div class="phil-eyebrow">PHILOSOPHY ── 文明食と、文化食。</div>
-    <h4>食べる食事は、薬じゃない。<br>でも、サプリでもない。</h4>
+    <h4>食事は薬じゃない。</h4>
     <p>冷凍食品やファストフードのような <strong style="color:var(--koji);">文明食</strong> も悪くありません。便利で、美味しくて、現代の暮らしを支えてくれます。</p>
     <p>でも、体が重いなと感じた時、本来の自分の食生活に戻すのが <strong style="color:var(--koji);">発酵食品 = 文化食</strong> の役割です。</p>
     <div class="pq">
@@ -859,11 +893,9 @@
   <div class="mission-foot">1200年の発酵を、次の1200年へ。</div>
 </section>
 
-<!-- ============ 締め ============ -->
+<!-- ============ 締め（社長メッセージ） ============ -->
 <section class="closing">
-  <div class="year-now">2026</div>
-  <div class="label-now">8 T H　A N N I V E R S A R Y</div>
-  <h2>8年目の朝を、<br>一緒に作ってきた。</h2>
+  <div class="ceo-eyebrow">── 社長からのメッセージ</div>
   <p class="msg">
     ここまで来られたのは、私たちの力だけではありません。<br>
     最初に試作を食べてくれた <strong>家族</strong>。<br>
@@ -882,9 +914,6 @@
       少しでも発酵してますか？
     </div>
   </div>
-
-  <a class="cta" href="#rewards">8周年を応援する</a>
-  <div class="cta-note">↓ 8周年限定セットへ</div>
 </section>
 
 <script>
